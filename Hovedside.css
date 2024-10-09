@@ -10,6 +10,9 @@
     padding: 20px;
     text-align: center;
     margin-top: 50px;
+    width: 100%; /* disse 3 (under) gjør at den e helt på bunnen*/
+    position: absolute;
+    bottom: 0;
 }
 
 .footer a {
@@ -51,6 +54,7 @@
 .div1 {
     background-color: black;
     display: flex;
+    padding: 20px; /* Sånn at den blir lik produktsiden sin*/
 }
 
 .text{
@@ -93,4 +97,8 @@
     display: flex;
     justify-content: center;
     width: calc(100% - 130px);
+}
+
+body {
+    margin: 0; /* fjerner rammene*/
 }
