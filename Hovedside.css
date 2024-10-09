@@ -23,8 +23,8 @@
 }
 
 .header {
-    background-color: white;
-    padding: 20px;
+    background-color: white; /*skal være sammme som det inni*/
+    padding: 20px; /*Denne gir den hvite rammen, MEN! du vil ha den, bare fargen over som er feil*/
     text-align: center;
 }
 
