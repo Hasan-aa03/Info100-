@@ -1,0 +1,117 @@
+.overskrift {
+    color: aqua;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: aqua;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: aqua;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+}
+
+.text{
+    color: aliceblue;
+    margin: 0;
+}
+
+.bilde1{
+    width: 300px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.produkt{
+    background-color: aquamarine;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 0;
+
+
+}
+
+.navn {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.produkter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hus{
+    width: 60px;
+    font-size: 60px;
+}
+
+.overskirftConteiner {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 130px);
+}
+
+.pagecontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

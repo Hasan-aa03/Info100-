@@ -1,0 +1,96 @@
+.overskrift {
+    color: aqua;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;            
+}
+
+.footer {
+    background-color: black;
+    color: aqua;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: aqua;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.div1 {
+    background-color: black;
+    display: flex;
+}
+
+.text{
+    color: aliceblue;
+    margin: 0;
+}
+
+.bilde{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.produkt{
+    background-color: aquamarine;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.produkter {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hus{
+    width: 60px;
+    font-size: 60px;
+}
+
+.overskirftConteiner {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 130px);
+}

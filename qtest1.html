@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedside</title>
+    <link rel="stylesheet" href="Hovedside.css"> <!-- Flytt stiler fra <style> til Hovedside.css om ønskelig -->
+    <style>
+        /* Sentrering og bredde for hele siden */
+        body {
+            font-family: Arial, sans-serif; /* Velg en enkel skrift til å begynne med */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        /* Container for å midtstille innholdet */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: #555;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            
+        }
+
+        .produkter {
+            display: flex;
+            flex-wrap: wrap; /* Gjør det responsivt ved å pakke om */
+            justify-content: center;
+        }
+
+        .produkt {
+            border: 1px solid #ddd;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .produkt:hover {
+            transform: scale(1.05);
+            background-color: #f4f4f4; /* Bakgrunnsfarge ved hover */
+        }
+
+        .produkt img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+
+        /* Media queries for responsiv design */
+        @media only screen and (max-width: 768px) {
+            .produkter {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            .produkt {
+                width: 90%; /* Tilpasser bredde på mindre skjermer */
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="omoss.html">Om Oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="div1">
+            <div class="hus" onclick="gohome()">
+                <a> 🏠 </a>
+            </div>
+            <div class="overskirftConteiner">
+                <h1 class="overskrift">Pokerhuset.no</h1>
+            </div>
+        </div>
+
+        <div class="produkter">
+            <div class="produkt" onclick="toProdukt(1)">
+                <a href="/Produktside1.html"></a>
+                <img class="bilde" src="https://i.ebayimg.com/images/g/H9gAAOSwvCVmY2vX/s-l1200.jpg" alt="">
+                <p class="navn">Poker Chips</p>
+            </div>
+            <div class="produkt" onclick="toProdukt(2)">
+                <img class="bilde" src="https://nordicpokershop.com/images/normal/alulada_2.jpg" alt="">
+                <p class="navn">Poker Koffert</p>
+            </div>
+            <div class="produkt" onclick="toProdukt(3)">
+                <img class="bilde" src="https://nordicpokershop.com/images/zoom/pokerbord-11.jpg" alt="">
+                <p class="navn">Poker Bord</p>
+            </div>
+            <div class="produkt" onclick="toProdukt(4)">
+                <img class="bilde" style="max-height: 200px;" src="https://media.bluestonepim.com/1d982375-6379-47aa-94dd-ca50b2d04f46/a6a9b2fa-4c10-4ab3-918f-8ce1363b8606/e4pCxOx8hFbbCEtf3B0BTzz2G/2rVh9iOarPVVEo1ZxG1c1bZZz.jpg?w=400&f=webp" alt="">
+                <p class="navn">Kortstokk</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pokerhuset.no</p>
+        <p>Kontakt oss: kontakt@pokerhuset.no</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedside</title>
+    <link rel="stylesheet" href="Hovedside.css">
+    <script src="script.js"> 
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="hus" onclick="gohome()">
+            <a> 🏠 </a>
+        </div>
+        <div class="overskirftConteiner">
+            <h1 class="overskrift">Pokerhuset.no</h1>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li class="nav-item">
+                    <a href="produkter.html">Produkter</a>
+                </li>
+                <li class="nav-item">
+                    <a href="omoss.html">Om Oss</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="produkter">
+        <div class="produkt" onclick="toProdukt(1)">
+            <a href="/Produktside1.html"></a>
+            <img class="bilde" src="https://i.ebayimg.com/images/g/H9gAAOSwvCVmY2vX/s-l1200.jpg" alt="">
+            <p class="navn">Poker Chips</p>
+        </div>
+        <div class="produkt" onclick="toProdukt(2)">
+            <img class="bilde" src="https://nordicpokershop.com/images/normal/alulada_2.jpg" alt="">
+            <p class="navn">Poker Koffert</p>
+        </div>
+        <div class="produkt" onclick="toProdukt(3)">
+            <img class="bilde" src="https://nordicpokershop.com/images/zoom/pokerbord-11.jpg" alt="">
+            <p class="navn">Poker Bord</p>
+        </div>
+        <div class="produkt" onclick="toProdukt(4)">
+            <img class="bilde" style="max-height: 200px;" src="https://media.bluestonepim.com/1d982375-6379-47aa-94dd-ca50b2d04f46/a6a9b2fa-4c10-4ab3-918f-8ce1363b8606/e4pCxOx8hFbbCEtf3B0BTzz2G/2rVh9iOarPVVEo1ZxG1c1bZZz.jpg?w=400&f=webp" alt="">
+            <p class="navn">Kortstokk</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Pokerhuset.no.</p>
+        <p>Kontakt oss: kontakt@pokerhuset.no</a></p>
+    </footer>
+</body>
+
+</html>
