@@ -5,15 +5,14 @@
 }
 
 .footer {
-    position: fixed;
     left: 0;
-    bottom: 0;
     width: 100%;
     background-color: black;
     color: aqua;
     padding: 20px;
     text-align: center;
-    margin-top: 50px;
+    bottom: 0;
+    position: fixed; /*Burde være absolute, går fint nå, men om du måtte scrolle på denne siden, så ligger den oppå med fixex der aboslute hadde hatt den helt på bunnen*/
 }
 
 .footer a {
@@ -26,15 +25,20 @@
     text-decoration: underline;
 }
 
+body {
+    height: 100vh; /* Sier at body må være like høy som vinduet */
+}
+
 .header {
-    position: fixed;
+    position: absolute; /* samme om du bruker fixed eller aboslute her */
     left: 0;
     top: 0;
     width: 100%;
     background-color: white;
     padding: 20px;
     text-align: center;
-}
+    height: 80px; /*sitter fast høyde så det blir consistent*/
+    }
 
 .nav-list {
     list-style-type: none;
